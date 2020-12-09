@@ -37,4 +37,8 @@ export class CocktailContainerComponent implements OnInit {
   ngOnInit() {
     this.selectedCocktail = this.cocktails[0];
   }
+
+  public selectCocktail(index: number): void {
+    this.selectedCocktail = this.cocktails[index];
+  }
 }
